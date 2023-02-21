@@ -2,6 +2,8 @@
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 {-# HLINT ignore "Eta reduce" #-}
 
+--hi amora
+
 type Cell = (Int,Int)
 data MyState = Null | S Cell [Cell] String MyState deriving (Show, Eq)
 
